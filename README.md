@@ -9,4 +9,4 @@ I've used p5js so I wish I can do more and I'd like to study from beginning sinc
 
 - References
     - [Siteinspire](https://www.siteinspire.com/)
-- [Reflective journal]("C:\Users\99578\Documents\GitHub\CART253\journal.md")
+- [Reflective journal](C:\Users\99578\Documents\GitHub\CART253\journal.md)
