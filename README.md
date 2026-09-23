@@ -2,7 +2,7 @@ This is a readme
 
 # Juna's CART 253
 
-![My image](C:\Users\99578\Documents\GitHub\CART253\Images\headerimage.jpg)
+![My image](Images/headerimage.jpg)
 
 My project in Creative Computation I is going to be..maybe something more than what I have done in previous years. I have used p5.js before, but this time, I would like to start from the basics and learning from the beginning, because I have already become somewhat familiar with using AI tools.
 
