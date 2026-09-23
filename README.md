@@ -1,5 +1,3 @@
-This is a readme
-
 # Juna's CART 253
 
 ![My image](Images/headerimage.jpg)
