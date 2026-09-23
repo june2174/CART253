@@ -68,6 +68,11 @@ function draw() {
     drawBird(bird.x, bird.y);
     bird.x = bird.x + 2;
     bird.y = bird.y + random(-4, 5);
+
+    if (bird.x > width) {
+        bird.x = 0;
+        bird.y = random(0, 100);
+    }
 }
 
 function drawBird(x, y) {
