@@ -1,6 +1,6 @@
-# TITLE OF PROJECT
+# Abstract-Alien
 
-AUTHOR NAME
+Juna Kim
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 
