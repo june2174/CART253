@@ -4,9 +4,14 @@ This is a readme
 
 ![My image](C:\Users\99578\Documents\GitHub\CART253\Images\headerimage.jpg)
 
-My project in Creative Computation1 course is going to be I don't know.. maybe something more than I've done in last years.
-I've used p5js so I wish I can do more and I'd like to study from beginning since I'm already kinda used to AI.
+My project in Creative Computation I is going to be..maybe something more than what I have done in previous years. I have used p5.js before, but this time, I would like to start from the basics and learning from the beginning, because I have already become somewhat familiar with using AI tools.
 
-- References
-    - [Siteinspire](https://www.siteinspire.com/)
-- [Reflective journal](C:\Users\99578\Documents\GitHub\CART253\journal.md)
+This website will be a space to document the projects, prototypes, and assignments I create throughout the CART253 course. Rather than simply presenting the final results, I want this website to show the process behind each project, including the approaches I took and the code I used to create them.
+
+
+## Links
+- [Siteinspire](https://www.siteinspire.com/)
+- [Reflective journal](journal.md)
+
+## Prototypes
+- Prototype: instructions
