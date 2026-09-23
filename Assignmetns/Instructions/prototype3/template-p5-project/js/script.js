@@ -47,18 +47,32 @@ function drawAlienTile(x, y, type) {
 
     if (type == "representational") {
 
-        // Green alien head
+        //Head
         fill(140, 255, 150);
         ellipse(x, y, 12, 10);
 
-        // Eyes
+        //Eyes
         fill(30, 20, 70);
         ellipse(x - 3, y, 2, 4);
         ellipse(x + 3, y, 2, 4);
 
-        // Nose
+        //Nose
         fill(255, 210, 60);
         ellipse(x, y + 2, 2, 2);
 
+    } else {
+
+        //Head
+        fill(80, 230, 255);
+        ellipse(x, y, 12, 10);
+
+        //Inner circle
+        fill(255, 80, 160);
+        ellipse(x, y, 7, 7);
+
+        //Eyes
+        fill(255, 210, 50);
+        ellipse(x - 2, y, 2, 3);
+        ellipse(x + 2, y, 2, 3);
     }
 }
