@@ -51,6 +51,11 @@ function draw() {
     fill(120, 255, 120);
     ellipse(300, 390, 210, 250);
 
+    // Hands
+    fill(255, 100, 190);
+    ellipse(185, 475, 55, 55);
+    ellipse(415, 475, 55, 55);
+
     //Head
     fill(140, 255, 150);
     ellipse(300, 220, 280, 230);
