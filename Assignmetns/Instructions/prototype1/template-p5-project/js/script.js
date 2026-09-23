@@ -42,7 +42,7 @@ function draw() {
     // Arms
     noFill();
     stroke(100, 230, 100);
-    strokeWeight(20);
+    strokeWeight(10);
     bezier(210, 330, 150, 350, 150, 430, 185, 475);
     bezier(390, 330, 450, 350, 450, 430, 415, 475);
     noStroke();
@@ -60,4 +60,24 @@ function draw() {
     //Head
     fill(140, 255, 150);
     ellipse(300, 220, 280, 230);
+
+    //Eyes
+    fill(30, 20, 70);
+    ellipse(245, 220, 70, 70);
+    ellipse(355, 220, 70, 70);
+    fill(255);
+    ellipse(235, 205, 18, 18);
+    ellipse(345, 205, 18, 18);
+
+    //Nose
+    fill(255, 210, 60);
+    ellipse(300, 270, 35, 25);
+
+    //Mouth
+    fill(40, 20, 70);
+    arc(300, 295, 100, 60, 0, PI);
+
+    //Belly
+    fill(255, 210, 60);
+    ellipse(300, 405, 100, 130);
 }
