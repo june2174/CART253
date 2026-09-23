@@ -15,7 +15,7 @@ This website will be a space to document the projects, prototypes, and assignmen
 ### Aliens
 - ![Prototype 1](Images/Alien-prototype1.png)
     - [Run Prototype](...)
-    - [View Code](Assignmetns/Instructions/prototype1/template-p5-project/js/script.js)
+    - [View Code](Assignments/Instructions/prototype1/template-p5-project/js/script.js)
 
 - ![Prototype 2](Images/Alien-prototype2.png)
     - [Run Prototype](...)
