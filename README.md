@@ -14,13 +14,13 @@ This website will be a space to document the projects, prototypes, and assignmen
 ## Prototypes
 ### Aliens
 ![Prototype 1](Images/Alien-prototype1.png)
-- [Run Prototype](https://june2174.github.io/CART253/tree/main/Assignments/Instructions/prototype1)
+- [Run Prototype](https://june2174.github.io/CART253/tree/main/Assignments/Instructions/prototype1/template-p5-project/)
 - [View Code](Assignments/Instructions/prototype1/template-p5-project/js/script.js)
 
 ![Prototype 2](Images/Alien-prototype2.png)
-- [Run Prototype](https://june2174.github.io/CART253/tree/main/Assignments/Instructions/prototype2)
+- [Run Prototype](https://june2174.github.io/CART253/tree/main/Assignments/Instructions/prototype2/template-p5-project/)
 - [View Code](Assignments/Instructions/prototype2/template-p5-project/js/script.js)
 
 ![Prototype 3](Images/Alien-prototype3.png)
-- [Run Prototype](https://june2174.github.io/CART253/tree/main/Assignments/Instructions/prototype3)
+- [Run Prototype](https://june2174.github.io/CART253/tree/main/Assignments/Instructions/prototype3/template-p5-project/)
 - [View Code](Assignments/Instructions/prototype3/template-p5-project/js/script.js)
