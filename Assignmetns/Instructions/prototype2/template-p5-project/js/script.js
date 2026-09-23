@@ -10,6 +10,7 @@
 
 /**
  * Canvas size + I'll draw with noStroke
+ * + Floating fragments to not make them move around
 */
 function setup() {
     createCanvas(600, 600);
@@ -67,4 +68,20 @@ function draw() {
     //Mouth
     fill(80, 230, 255);
     ellipse(300, 350, 50, 50);
+
+    // Floating fragments
+    fill(180, 70, 240);
+    triangle(60, 120, 105, 75, 125, 140);
+    fill(255, 210, 50);
+    triangle(480, 110, 535, 155, 500, 180);
+    fill(80, 230, 255);
+    triangle(75, 380, 120, 350, 105, 410);
+    fill(255, 210, 50);
+    triangle(465, 455, 530, 420, 510, 490);
+    fill(180, 70, 240);
+    triangle(145, 510, 175, 455, 205, 515);
+    fill(80, 230, 255);
+    triangle(400, 520, 435, 465, 470, 525);
+    fill(255, 210, 50);
+    triangle(530, 270, 570, 240, 565, 300);
 }
