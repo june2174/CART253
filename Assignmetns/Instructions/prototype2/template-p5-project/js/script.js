@@ -23,6 +23,29 @@ function setup() {
 function draw() {
     background(255, 80, 160);
 
+    //Petal shapes
+    for (let i = 0; i < TWO_PI; i += PI / 6) {
+        let x = 300 + cos(i) * 230;
+        let y = 300 + sin(i) * 200;
+
+        push();
+        translate(x, y);
+        rotate(i);
+        fill(80, 230, 255, 80);
+        ellipse(0, 0, 100, 55);
+        pop();
+    }
+
+    //Antenna
+    stroke(30, 20, 80);
+    strokeWeight(10);
+    line(230, 150, 150, 70);
+    line(370, 150, 450, 70);
+    noStroke();
+    fill(255, 210, 50);
+    ellipse(150, 70, 50, 50);
+    ellipse(450, 70, 50, 50);
+
     //Head
     fill(80, 230, 255);
     ellipse(300, 300, 380, 330);
