@@ -9,7 +9,7 @@ Juna Kim
 Mainly used random() function and variables to move and shake bird + mrFurious. To slow down the speed of the sky and mrFurious's color changing, I used *0.99... than adding numbers.
 
 ## Screenshot(s)
-![Image of project](../Images/VariablesChallenges.png)
+![Image of project](../../../Images/VariablesChallenges.png)
 
 ## Attribution
 This bit should attribute any code, assets or other elements used taken from other sources. For example:
