@@ -32,7 +32,12 @@ let sky = {
 let bird = {
     x: 70,
     y: 50,
-}
+};
+
+let shakingrange = {
+    a: 0,
+    b: 0
+};
 
 /**
  * Create the canvas
@@ -46,17 +51,17 @@ function setup() {
  */
 function draw() {
     background(sky.fill.r, sky.fill.g, sky.fill.b);
-    sky.fill.r = sky.fill.r * 0.999;
-    sky.fill.g = sky.fill.g * 0.999;
-    sky.fill.b = sky.fill.b * 0.999;
+    sky.fill.r = sky.fill.r * 0.995;
+    sky.fill.g = sky.fill.g * 0.995;
+    sky.fill.b = sky.fill.b * 0.995;
     sky.fill.r = constrain(sky.fill.r, 20, 200);
     sky.fill.g = constrain(sky.fill.g, 30, 200);
-    sky.fill.b = constrain(sky.fill.b, 50, 200);
+    sky.fill.b = constrain(sky.fill.b, 55, 200);
 
     mrFurious.fill.g = mrFurious.fill.g * 0.99;
     mrFurious.fill.b = mrFurious.fill.b * 0.99;
-    mrFurious.fill.g = constrain(mrFurious.fill.g, 80, 225);
-    mrFurious.fill.b = constrain(mrFurious.fill.b, 80, 225);
+    mrFurious.fill.g = constrain(mrFurious.fill.g, 70, 225);
+    mrFurious.fill.b = constrain(mrFurious.fill.b, 70, 225);
 
     // Draw Mr. Furious as a coloured circle
     push();
@@ -65,14 +70,23 @@ function draw() {
     ellipse(mrFurious.x, mrFurious.y, mrFurious.size);
     pop();
 
+    //Bird moving
     drawBird(bird.x, bird.y);
-    bird.x = bird.x + 2;
+    bird.x = bird.x + 3;
     bird.y = bird.y + random(-4, 5);
 
     if (bird.x > width) {
         bird.x = 0;
         bird.y = random(0, 100);
     }
+
+    //Mr.Furious moving
+    ShakingmrFurious(shakingrange.a, shakingrange.b);
+    shakingrange.a = shakingrange.a - 0.05;
+    shakingrange.b = shakingrange.b + 0.05;
+    shakingrange.a = constrain(shakingrange.a, -3, 0);
+    shakingrange.b = constrain(shakingrange.b, 0, 3);
+
 }
 
 function drawBird(x, y) {
@@ -118,3 +132,9 @@ function drawBird(x, y) {
     ellipse(3, -2, 3);
     pop();
 }
+
+function ShakingmrFurious(a, b) {
+    mrFurious.x = mrFurious.x + random(a, b);
+    mrFurious.y = mrFurious.y + random(a, b);
+}
+
