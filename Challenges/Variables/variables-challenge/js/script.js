@@ -1,6 +1,6 @@
 /**
  * Mr. Furious
- * Pippin Barr
+ * Juna
  *
  * A guy who becomes visibly furious!
  */
@@ -29,11 +29,13 @@ let sky = {
     }
 };
 
+//initial position of bird
 let bird = {
     x: 70,
     y: 50,
 };
 
+//initialize the range of shaking
 let shakingrange = {
     a: 0,
     b: 0
@@ -50,6 +52,7 @@ function setup() {
  * Draw (and update) Mr. Furious
  */
 function draw() {
+    //gradually change the background color to dark blue
     background(sky.fill.r, sky.fill.g, sky.fill.b);
     sky.fill.r = sky.fill.r * 0.995;
     sky.fill.g = sky.fill.g * 0.995;
@@ -58,6 +61,7 @@ function draw() {
     sky.fill.g = constrain(sky.fill.g, 30, 200);
     sky.fill.b = constrain(sky.fill.b, 55, 200);
 
+    //gradually change the color of Mr. Furious to red (but not too red!)
     mrFurious.fill.g = mrFurious.fill.g * 0.99;
     mrFurious.fill.b = mrFurious.fill.b * 0.99;
     mrFurious.fill.g = constrain(mrFurious.fill.g, 70, 225);
