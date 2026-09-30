@@ -51,7 +51,6 @@ function draw() {
     drawPuck();
     movePuck();
     drawTarget();
-    checkTarget();
 }
 
 /**
@@ -132,20 +131,37 @@ function movePuck() {
 }
 
 function drawTarget() {
+    const overlap = checkTarget();
+
     push();
-    noStroke();
+    stroke(0);
     fill(target.fill);
     ellipse(target.x, target.y, target.size);
     pop();
+
+    if (overlap) {
+        push();
+        fill(0);
+        ellipse(target.x - 30, target.y - 10, 5);
+        ellipse(target.x + 30, target.y - 10, 5);
+        pop();
+    } else {
+        push();
+        stroke(0);
+        strokeWeight(3);
+        line(target.x - 30, target.y - 10, target.x - 10, target.y - 10);
+        line(target.x + 30, target.y - 10, target.x + 10, target.y - 10);
+        line(target.x - 10, target.y + 20, target.x + 10, target.y + 20);
+        pop();
+    }
 }
 
 function checkTarget() {
     const d = dist(puck.x, puck.y, target.x, target.y);
-    const overlap = (d < user.size / 2 + target.size / 2);
+    const overlap = (d < puck.size / 2 + target.size / 2);
     if (overlap) {
         target.fill = target.fills.overlap;
-    }
-    else {
+    } else {
         target.fill = target.fills.noOverlap;
     }
 }
