@@ -32,13 +32,14 @@ function setup() {
  */
 function draw() {
     background("#aaaaaa");
-
     // Move user circle
     moveUser();
 
     // Draw the user and puck
     drawUser();
     drawPuck();
+    movePuck();
+
 }
 
 /**
@@ -69,4 +70,20 @@ function drawPuck() {
     fill(puck.fill);
     ellipse(puck.x, puck.y, puck.size);
     pop();
+}
+
+/**
+ * moving puck when user circle overlaps with puck
+ * */
+function movePuck() {
+    let distance = dist(user.x, user.y, puck.x, puck.y);
+    let minDistance = (user.size + puck.size) / 2;
+
+    if (distance < minDistance) {
+        let angle = atan2(puck.y - user.y, puck.x - user.x);
+        let force = 5; // Adjust the force as needed
+
+        puck.x = user.x + cos(angle) * minDistance;
+        puck.y = user.y + sin(angle) * minDistance;
+    }
 }
