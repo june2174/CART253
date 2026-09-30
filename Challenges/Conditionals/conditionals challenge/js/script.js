@@ -76,14 +76,24 @@ function drawPuck() {
  * moving puck when user circle overlaps with puck
  * */
 function movePuck() {
+    if (!puck.vel) {
+        puck.vel = createVector(0, 0);
+    }
+
+    puck.x += puck.vel.x;
+    puck.y += puck.vel.y;
+
     let distance = dist(user.x, user.y, puck.x, puck.y);
     let minDistance = (user.size + puck.size) / 2;
 
     if (distance < minDistance) {
         let angle = atan2(puck.y - user.y, puck.x - user.x);
-        let force = 5; // Adjust the force as needed
+        let force = 3; // Adjust the force as needed
 
         puck.x = user.x + cos(angle) * minDistance;
         puck.y = user.y + sin(angle) * minDistance;
+
+        puck.vel = createVector(cos(angle) * force, sin(angle) * force);
+        puck.vel.mult(4);
     }
 }
