@@ -96,4 +96,25 @@ function movePuck() {
         puck.vel = createVector(cos(angle) * force, sin(angle) * force);
         puck.vel.mult(4);
     }
+
+    //To keep puck inside the canvas
+    if (puck.x - puck.size / 2 < 0) {
+        puck.x = puck.size / 2;
+        puck.vel.x *= -1;
+    }
+
+    if (puck.x + puck.size / 2 > width) {
+        puck.x = width - puck.size / 2;
+        puck.vel.x *= -1;
+    }
+
+    if (puck.y - puck.size / 2 < 0) {
+        puck.y = puck.size / 2;
+        puck.vel.y *= -1;
+    }
+
+    if (puck.y + puck.size / 2 > height) {
+        puck.y = height - puck.size / 2;
+        puck.vel.y *= -1;
+    }
 }
