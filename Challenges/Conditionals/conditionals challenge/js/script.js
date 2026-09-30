@@ -142,8 +142,15 @@ function drawTarget() {
     if (overlap) {
         push();
         fill(0);
-        ellipse(target.x - 30, target.y - 10, 5);
-        ellipse(target.x + 30, target.y - 10, 5);
+        ellipse(target.x - 20, target.y - 10, 8);
+        ellipse(target.x + 20, target.y - 10, 8);
+        pop();
+
+        push();
+        noFill();
+        stroke(0);
+        strokeWeight(3);
+        arc(target.x, target.y + 5, 25, 20, 0, PI);
         pop();
     } else {
         push();
@@ -164,4 +171,6 @@ function checkTarget() {
     } else {
         target.fill = target.fills.noOverlap;
     }
+
+    return overlap;
 }
