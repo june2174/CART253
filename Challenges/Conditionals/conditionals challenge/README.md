@@ -14,5 +14,5 @@ Juna Kim
 
 ## Attribution
 
-- This project uses [p5.js](https://p5js.org).
+- This project uses [p5.js](https://p5js.org)
 - The velocity references [Reference](https://editor.p5js.org/p5/sketches/Motion:_Circle_Collision)
