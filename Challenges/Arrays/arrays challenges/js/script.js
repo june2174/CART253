@@ -21,6 +21,9 @@ function setup() {
  * Creates a random ball
  */
 function createBall(x = 200, y = 200) {
+    let r = random(100, 255);
+    let g = random(100, 255);
+    let b = random(100, 255);
     // Create a ball object with appropriate properties
     const newBall = {
         // Position and dimensions
@@ -28,7 +31,7 @@ function createBall(x = 200, y = 200) {
         y: y,
         size: 20,
         // Colour
-        fill: "#000000",
+        fill: color(r, g, b),
         // Movement
         velocity: {
             x: random(-5, 5),
