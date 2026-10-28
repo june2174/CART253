@@ -88,3 +88,8 @@ function drawBall(ball) {
     ellipse(ball.x, ball.y, ball.size);
     pop();
 }
+
+function mousePressed() {
+    const newBall = createBall();
+    balls.push(newBall);
+}
