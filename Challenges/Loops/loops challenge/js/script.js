@@ -21,27 +21,9 @@ function setup() {
 function draw() {
     background("pink");
 
-    let x = 0;
-    let y = 0;
-
-    let r = random(255);
-    let g = random(255);
-    let b = random(255);
-
-    while (x <= width && y <= height) {
-        push();
-        stroke(r, g, b);
-        strokeWeight(x / 50);
+    for (let x = 0; x <= width; x++) {
+        let gradcolor = map(x, 0, width, 0, 255);
+        stroke(gradcolor);
         line(x, 0, x, height);
-        x += 50;
-        pop();
-
-        push();
-        stroke(r, g, b);
-        strokeWeight(y / 50);
-        line(0, y, width, y);
-        y += 50;
-        pop();
     }
-    noLoop();
 }
