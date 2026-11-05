@@ -1,6 +1,6 @@
 /**
- * Lines
- * Pippin Barr
+ * Moving Gradient
+ * Juna Kim
  * 
  * A series of lines across the canvas
  */
