@@ -1,0 +1,12 @@
+{
+    "descriptions": {
+        "en": "This challenge generates a random car name by combining a car brand with a dinosaur name.",
+        "fr": "Ce défi génère un nom de voiture aléatoire en combinant une marque de voiture avec un nom de dinosaure.",
+        "kr": "이 챌린지는 자동차 브랜드와 공룡 이름을 결합하여 무작위 자동차 이름을 생성합니다."
+    },
+    "instructions": {
+        "en": "Click anywhere to generate a new car name.",
+        "fr": "Cliquez n'importe où pour générer un nouveau nom de voiture.",
+        "kr": "새로운 자동차 이름을 생성하려면 아무 곳이나 클릭하세요."
+    }
+}
