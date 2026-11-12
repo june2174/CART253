@@ -1,6 +1,6 @@
 /**
- * Terrible New Car
- * Pippin Barr
+ * Terrible Car Name Generator
+ * Juna Kim
  * 
  * A program to generate new car model names using dinosaurs.
  * 
@@ -59,7 +59,7 @@ function mousePressed() {
     let car = random(carData.cars);
     let dinosaur = random(dinosaurData.dinosaurs);
 
-    carName = `${car} ${dinosaur}`;
+    carName = car + " " + dinosaur;
 }
 
 function changeLanguae() {

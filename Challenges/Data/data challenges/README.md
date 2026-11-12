@@ -1,23 +1,20 @@
-# TITLE OF PROJECT
+# Terrible Car Name Generator
 
-AUTHOR NAME
+Juna Kim
 
-[View this project online](URL_FOR_THE_RUNNING_PROJECT)
+[View this project online](https://june2174.github.io/CART253/Challenges/Data/data%20challenges/)
 
 ## Description
 
-This description should help the reader understand what the program is, anything they should know to be able to experience it (controls, special features, etc.), and what the desired user experience is. For example:
+This challenge uses three json file. cars.json and dinosaurs.json are provided and I wrote lang.json. cars and dinosaurs json files have loads of name of each cars and dinosaurs. So the code reads the files and as I press the mouse, it randomly picks one word from each file, combines them and give us the name of the car. Also we have instructions, in lang.json I put instructions in three different language, english, french, and korean. Code also reads the lang.json. I initialized the language to english, but I also made it possible to change the language by pressing the key (e,f,k).
+
+## Screenshot(s)
+
+![Image of project](../../../Images/Datachallenges.png)
 
 ## Attribution
 
 This bit should attribute any code, assets or other elements used taken from other sources. For example:
 
-> - This project uses [p5.js](https://p5js.org).
-> - The clown image is a capture of the clown from the Apple emoji character set.
-> - The barking sound effect is "single dog bark 1" by crazymonke9 from freesound.org: https://freesound.org/people/crazymonke9/sounds/418107/
-
-## License
-
-This bit could include the license you want to apply to your work. For example:
-
-> This project is licensed under a Creative Commons Attribution ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en)) license with the exception of libraries and other components with their own licenses.
+- This project uses [p5.js](https://p5js.org).
+- Uses file from [Darius Kazemi's corpora repository](https://github.com/dariusk/corpora/tree/master).
