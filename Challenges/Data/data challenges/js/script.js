@@ -15,7 +15,7 @@ let carData = undefined;
 let dinosaurData = undefined;
 let langData = undefined;
 
-let lang = "kr";
+let lang = "en";
 
 // Starts with the instruction
 let carName = "";
@@ -35,10 +35,7 @@ async function preload() {
 async function setup() {
     createCanvas(600, 400);
     //await preload();
-
-    if (langData) {
-        carName = langData.instructions[lang];
-    }
+    changeLanguae();
 }
 
 /**
@@ -63,4 +60,23 @@ function mousePressed() {
     let dinosaur = random(dinosaurData.dinosaurs);
 
     carName = `${car} ${dinosaur}`;
+}
+
+function changeLanguae() {
+    if (langData) {
+        carName = langData.instructions[lang];
+    }
+}
+
+function keyPressed() {
+    if (key === "e" || key === "E") {
+        lang = "en";
+        changeLanguae();
+    } else if (key === "k" || key === "K") {
+        lang = "kr";
+        changeLanguae();
+    } else if (key === "f" || key === "F") {
+        lang = "fr";
+        changeLanguae();
+    }
 }
