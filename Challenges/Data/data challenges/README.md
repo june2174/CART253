@@ -14,7 +14,5 @@ This challenge uses three json file. cars.json and dinosaurs.json are provided a
 
 ## Attribution
 
-This bit should attribute any code, assets or other elements used taken from other sources. For example:
-
 - This project uses [p5.js](https://p5js.org).
 - Uses file from [Darius Kazemi's corpora repository](https://github.com/dariusk/corpora/tree/master).
