@@ -14,10 +14,11 @@
 let carData = undefined;
 let dinosaurData = undefined;
 let langData = undefined;
-let lang = "fr";
+
+let lang = "kr";
 
 // Starts with the instruction
-let carName = "Click to generate a car name.";
+let carName = "";
 
 /**
  * Load the car and dinosaur data
@@ -25,6 +26,7 @@ let carName = "Click to generate a car name.";
 async function preload() {
     carData = await loadJSON("assets/data/cars.json");
     dinosaurData = await loadJSON("assets/data/dinosaurs.json");
+    langData = await loadJSON("assets/data/lang.json");
 }
 
 /**
@@ -32,8 +34,11 @@ async function preload() {
 */
 async function setup() {
     createCanvas(600, 400);
+    //await preload();
 
-    await preload();
+    if (langData) {
+        carName = langData.instructions[lang];
+    }
 }
 
 /**
@@ -45,7 +50,7 @@ function draw() {
     push();
     fill("pink");
     textAlign(CENTER, CENTER);
-    textSize(32);
+    textSize(15);
     text(carName, width / 2, height / 2);
     pop();
 }
